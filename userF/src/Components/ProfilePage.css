@@ -1,0 +1,157 @@
+.profile-page {
+    padding: 2rem;
+    margin-top: 8rem;
+  }
+  
+  .profile-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .profile-name {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .profile-email,
+  .profile-phone,
+  .profile-address {
+    font-size: 1rem;
+    color: #666;
+    text-align: left;
+    padding-left: 4rem;
+  }
+  
+  .orders-col {
+    padding: 1rem;
+  }
+  
+  .orders-heading {
+    font-size: 1.75rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .orders-list {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-card {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .order-one-by-one {
+    border-bottom: 2px solid #ff5454;
+  }
+  
+  .order-card:last-child {
+    border-bottom: none;
+  }
+  
+  .order-product-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 1rem;
+  }
+  
+  .order-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .order-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .order-number,
+  .order-product-name,
+  .order-price,
+  .order-status,
+  .order-date {
+    margin: 0.25rem 0;
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .profile-page {
+      padding: 1rem;
+    }
+  
+    .profile-card {
+      padding: 1rem;
+    }
+  
+    .profile-image {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .orders-heading {
+      font-size: 1.5rem;
+    }
+  
+    .order-product-image {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+
+.change-profile {
+  color: black;
+  position: relative;
+  left: 10rem;
+}
+
+.order-details-main {
+  color: black;
+  padding: 1rem;
+}
+
+.order-details-main p {
+  padding: 0%;
+  margin: 0%;
+  margin-top: 4px;
+  color: #00bd1c;
+}
+
+.cancel-order {
+  border: none;
+  background-color: #f9f9f9;
+  width: 10rem;
+  color: #fa0000;
+  margin: 0%;
+  padding: 0%;
+  position: relative;
+  left: 20rem;
+  bottom: 14rem;
+}
+
+.cancel-order:hover {
+  background-color: #f9f9f9;
+  color: #454545;
+}
+
+.order-main-part {
+    color: black;
+}

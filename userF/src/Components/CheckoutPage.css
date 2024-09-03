@@ -1,0 +1,39 @@
+/* CheckoutPage.css */
+
+/* General styles */
+.container {
+  max-width: 1200px;
+}
+
+h2, h3 {
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.table {
+  margin-bottom: 2rem;
+}
+
+.btn {
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  .form-control,
+  .form-check-input {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-lg-6 {
+    padding: 0 15px;
+  }
+}

@@ -1,0 +1,75 @@
+.order-history { 
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+ #order{
+    margin-top: 10rem;
+ }
+  .order-history table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .order-history th, .order-history td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .order-history th {
+    background-color: #f0f0f0;
+  }
+  
+  .order-history td img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .order-history td span {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .order-history {
+      padding: 10px;
+    }
+  
+    .order-history table {
+      font-size: 14px;
+    }
+  
+    .order-history th, .order-history td {
+      padding: 5px;
+    }
+  
+    .order-history td img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .order-history {
+      padding: 5px;
+    }
+  
+    .order-history table {
+      font-size: 12px;
+    }
+  
+    .order-history th, .order-history td {
+      padding: 2px;
+    }
+  
+    .order-history td img {
+      width: 20px;
+      height: 20px;
+    }
+  }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+        <link rel="stylesheet" href="style/Signup.css">
+
+</head>
+<body>
+    <div className="form-box">
+        <div className="from-value">
+          <form action="/signup" method="Post" onSubmit={handleSubmit}>
+            <h2 className='mt-3'>Signup</h2>
+            <div className="inputbox">
+              <input
+                type="text"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                required
+              />
+              <label>UserName</label>
+            </div>
+            <div className="inputbox">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+              <input
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+              />
+              <label>Email</label>
+            </div>
+            <div className="inputbox">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+              <input
+                type="email"
+                // value={password}
+                // onChange={(e) => setEmail()}
+                required
+              />
+              <label>Password</label>
+            </div>
+            <div className="forget">
+              <label>
+                <input
+                  type="checkbox"
+                  checked={rememberMe}
+                  onChange={(e) => setRememberMe(e.target.checked)}
+                />
+                Remember Me
+                <a href="a">Forget Password</a>
+              </label>
+            </div>
+            <button type="submit">Sign up</button>
+            <div className="register">
+              <p>
+                Already have a Account <a href="/login">Register</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+</body>
+</html>

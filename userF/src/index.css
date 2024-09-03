@@ -1,0 +1,316 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat"; 
+    
+    font-weight: 600;
+    background-color: white;
+    
+   overflow-x: hidden;
+  }
+  .card-img-top{
+    height: 250px;
+    width: 500px;
+    object-fit: contain;
+  }
+  /* code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  } */
+  
+  .button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .15s ease;
+  }
+  
+  .button::before,
+  .button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid #7D8082;
+    transition: all .15s ease;
+  }
+  
+  .button::before {
+    top: 0;
+    border-bottom-width: 0;
+  }
+  
+  .button::after {
+    bottom: 0;
+    border-top-width: 0;
+  }
+  
+  .button:active,
+  .button:focus {
+    outline: none;
+  }
+  
+  .button:active::before,
+  .button:active::after {
+    right: 3px;
+    left: 3px;
+  }
+  
+  .button:active::before {
+    top: 3px;
+  }
+  
+  .button:active::after {
+    bottom: 3px;
+  }
+  
+  .button_lg {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #0f1923;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+  }
+  
+  .button_lg::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: #0f1923;
+  }
+  
+  .button_lg::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #0f1923;
+    transition: all .2s ease;
+  }
+  
+  .button_sl {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: -8px;
+    width: 0;
+    background-color: #ff4655;
+    transform: skew(-15deg);
+    transition: all .2s ease;
+  }
+  
+  .button_text {
+    position: relative;
+  }
+  .button:hover {
+    color: #0f1923;
+  }
+  
+  .button:hover .button_sl {
+    width: calc(100% + 15px);
+  }
+  
+  .button:hover .button_lg::after {
+    background-color: #fff;
+  }
+  
+  /* animations */
+
+  .product-main-card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .product-card {
+    transition: all 0.3s ease-in-out; /* add transition effect to card */
+    border: none;
+    width: 24rem;
+    background-color: #f0f0f0;
+    margin-bottom: 2rem;
+  }
+.product-images {
+  background-color: white;
+}
+  .product-images img {
+    height: 20rem;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px); /* lift card on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* increase shadow on hover */
+  }
+
+  #main-div-product {
+    background-color: #f0f0f0;
+  }
+  
+  /* sliding effect on hover */
+  /* .imgdata:hover {
+    transform: translateY(-10px) scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  } */
+  
+  /* dropping effect on hover */
+  /* .imgdata:hover {
+    transform: translateY(10px) scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  } */
+  
+  /* zooming effect on hover */
+  /* .imgdata:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+  } */
+
+.social-icon{
+  margin: 0;
+  padding: 0;
+}
+  .fa-brands{
+    position:relative;
+    justify-content: space-evenly;
+    margin-left: 0rem;
+    padding-left: 1.75rem;
+    font-size: 1.5rem;
+    color: white;
+    opacity: 0.5;
+  }
+  .fa-brands:hover{
+   color: white;
+   opacity: 1;
+  }
+
+  .navbar-toggler{
+    background-color: white;
+  }
+  .offcanvas-body{
+    /* margin-right: -10rem; */
+  }
+  .card-conatiner{
+    /* margin-right: -1.5rem; */
+  }
+
+ 
+
+  .btnhover button{
+    height: 3rem;
+    width: 200px;
+    margin-right: 1rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 0  rgba(0, 0, 0, 0.5);
+    transition: ease-out 0.3s;
+    font-size: 1rem;
+    outline: none; 
+
+    background-color: white;
+    margin-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+   
+    border: 1px solid white;
+      
+}
+
+.btnhover button:hover{
+    box-shadow: inset 300px 0 0 0  rgba(0, 0, 0, 0);
+    background-color:transparent ;
+    color: white;
+}
+
+/* 
+#offcanvasRightLabel{
+  margin-right: -10rem;
+} */
+
+.html{
+  width: 100%;
+}
+/* styles.css */
+.checkout-page, .order-history-page, .order-details-page {
+  padding: 20px;
+}
+
+
+.product-details, .order-history-page ul, .order-details-page ul {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.equipment-page {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (max-width: 425px) {
+
+  .form-box{
+  width: 350px !important;
+  }
+  .in-box{
+    /* width: 30% !important; */
+  }
+  .inputbox{
+    width: 300px !important;
+  }
+  .equipment-page {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media (max-width: 375px) {
+
+  .form-box{
+  /* width: 300px !important; */
+  margin-left: 1rem;
+  margin-right: 1rem;
+  }
+  .inputbox{
+    width: 230px !important;
+  }
+  label{
+    padding-left: 1.5rem;
+  }
+}
+
+ 

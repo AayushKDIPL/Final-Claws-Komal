@@ -1,0 +1,59 @@
+import React, { useState } from 'react';
+
+// import tshirt from "./img/product-1.JPG";
+
+// import "../style/Tshirt.css";
+ // Import your CSS file for additional styling
+import Products from "./Products";
+
+export default function Tshirt() {
+
+  const [data, setData] = useState(Products);
+  const [cart, setCart] = useState([]);
+  // Define an array of product details
+   
+
+  const handleAddToCart = (Products) => {
+    // Retrieve the existing cart data from localStorage
+    const cartData = localStorage.getItem('cartData');
+    let cart = cartData ? JSON.parse(cartData) : [];
+
+    // Check if the product already exists in the cart
+    const existingProductIndex = cart.findIndex(item => item.title === Products.title);
+
+    if (existingProductIndex !== -1) {
+      // If the product exists, increment the quantity
+      cart[existingProductIndex].quantity = (cart[existingProductIndex].quantity || 1) + 1;
+    } else {
+      // If the product does not exist, add it to the cart with quantity 1
+      cart.push({ ...Products, quantity: 1 });
+    }
+
+    // Save the updated cart data to localStorage
+    localStorage.setItem('cartData', JSON.stringify(cart));
+
+    // Provide feedback to the user
+    alert('Product added to cart!');
+  };
+
+  return (
+    <div className="tshirt-container">
+      <div className="card-container">
+        
+        {Products.map((values, index) =>{
+          const { id,title, price, originalPrice,description,image} = values;
+          return (
+          <div className="card" key={index}>
+            <img src={Products.image} className="card-img" alt="empty" />
+            <p className="card-title">{Products.title}</p>
+            <p>Price: ₹{values.price} &nbsp; Offer: {values.offer}%off</p>
+            <p className="card-info">{Products.description}</p>
+            <button type="button" onClick={() => handleAddToCart(Products)} className="btn btn-dark w-50">
+              Add to Cart
+            </button>
+          </div>
+)})}
+      </div>
+    </div>
+  );
+}

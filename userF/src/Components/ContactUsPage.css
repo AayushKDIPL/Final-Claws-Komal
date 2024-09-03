@@ -1,0 +1,60 @@
+.contact-us-page {
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+  }
+  
+  .intro-text {
+    margin-bottom: 2rem;
+  }
+  
+  .intro-subtitle {
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .intro-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: red;
+  }
+  
+  .intro-description {
+    color: #777;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .form-heading {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+  }
+  
+  .form-control {
+    border-radius: 0.25rem;
+  }
+  
+  .custom-btn {
+    background-color: #00b919; /* Primary color */
+    border: none;
+    color: white;
+    width: 8rem;
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 0.25rem;
+    height: 3rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-btn:hover {
+    background-color: #0056b3; /* Darker shade of primary color */
+  }
+  
+  .custom-btn:focus {
+    outline: none;
+  }
+  

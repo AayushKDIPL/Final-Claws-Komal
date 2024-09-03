@@ -1,0 +1,463 @@
+* {
+  font-family: "Nunito Sans", sans-serif;
+  /* background-color: #1c1b1b; */
+}
+
+* button {
+  text-transform: uppercase;
+}
+
+.text-clr {
+  color: white;
+}
+
+ul li {
+  justify-content: space-between;
+}
+
+.container-fluid {
+  margin-left: 2rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.navbar {
+  height: 97.5px;
+  margin: 0%;
+  padding: 0%;
+  background-color: #1c1b1b;
+}
+
+
+/* 
+.navbar-expand {
+  height: 5rem;
+} */
+
+.logo {
+  color: white;
+  height: 5.5rem;
+  width: 10.6rem;
+  margin-right: 3rem;
+  margin-left: 2rem;
+}
+
+.merchandise,
+.equipment {
+  font-weight: 900;
+  height: 20px;
+  color: white;
+  letter-spacing: 0.75ch;
+}
+
+.merchandise {
+  margin-right: 1.5rem;
+  margin-left: 3rem;
+}
+
+.equipment {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.search {
+  margin-left: 7rem;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.form-control {
+  width: 20rem;
+}
+
+.icon_div {
+  margin-left: 10rem;
+  margin-right: 2rem;
+}
+
+.icon {
+  font-size: xx-large;
+  color: white;
+}
+
+/* Responsive Styles */
+
+
+
+/* media & active css */
+/* Header.css */
+
+.nav-link.text-clr {
+  color: white !important;
+}
+
+.nav-item .dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dropdown-item {
+  color: white !important;
+}
+
+.dropdown-item:hover {
+  color: black !important;
+}
+
+.logo {
+  width: 100px;
+}
+
+.search-bar {
+  position: absolute;
+  margin-top: -4.5rem;
+  right: 1rem;
+  height: 5.5rem !important;
+  background: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none; 
+}
+
+.nav-icon {
+  color: white;
+  cursor: pointer;
+  width: 4.8rem;
+}
+.nav-icon {
+  margin-left: 22rem;
+  font-size: 1.5rem !important;
+}
+.navbar-toggler   {
+  width: 4rem !important;
+}
+.nav-icon .fas{
+  margin-top: 0.5rem;
+}
+.nav-icon .btn{
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+
+.nav-icon .fa-solid {
+  margin-left: -5rem;
+  margin-top: 1rem;
+}
+
+.offcanvas-container{
+  margin-right: -8rem;
+  
+}
+.fa-search{
+  margin-right:3.5rem ;
+}
+.fa-store{
+   color: white;
+}
+@media (max-width: 1680px) {
+  .nav-icon{
+    margin-right: -12rem;
+  }
+  #store{
+    /* margin-right: -rem; */
+  }
+  .footer-box{
+    /* margin-right: -2rem; */
+  }
+ 
+}
+
+
+
+/* Media Queries for Responsiveness */
+ 
+@media (max-width: 992px) {
+  .nav-icon{
+    margin-right: auto;
+  }
+  .offcanvas-container{
+    margin-right: 0rem;
+  }
+   
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    z-index: 1;
+    position: relative;
+  }
+  .navbar-toggler {
+    /* font-size: 30px !important; */
+    background-color: transparent;
+  }
+  .navbar-toggler {
+    z-index: 3; /* or a higher value than the navbar */
+  }
+  .navbar-toggler {
+    pointer-events: auto;
+  }
+  /* .navbar-expend{
+    height: 100px;
+  } */
+  .search-bar input {
+    z-index: 3;
+    position: relative;
+    /* margin-top: 1.6rem !important; */
+  }
+
+  .nav-link.text-clr {
+    color: white !important;
+  }
+
+  .nav-icon {
+    margin-right: 0.5rem;
+  }
+
+  .dropdown-menu {
+    position: relative;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+  }
+
+  .dropdown-item {
+    width: 100%;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .dropdown-item:hover {
+    background-color: #333;
+    color: white;
+  }
+}
+
+/* Add this to your CSS file */
+.navbar-toggler-icon {
+  background-color: #fff; /* Add a background color to the toggle icon */
+}
+
+.navbar-toggler {
+  border-color: #fff; /* Add a border color to the toggle button */
+}
+
+.navbar-toggler:focus {
+  box-shadow: none; /* Remove the box shadow on focus */
+}
+
+.collapse.navbar-collapse {
+  padding-left: 2rem;
+  /* padding-right:10px; */
+  margin-left: -1.5rem;
+  margin-right: -1rem;
+  background-color: #1c1b1b; /* Add a background color to the navbar collapse */
+}
+
+.search-bar {
+  z-index: 1; /* Add a z-index to the search bar to bring it to the top */
+}
+
+.nav-icon {
+  margin-left: 1rem; /* Adjust the margin left for the nav icon */
+}
+
+.nav-icon i {
+  margin-left: 0.5rem; /* Adjust the margin left for the nav icon */
+}
+
+.offcanvas-body {
+  padding: 1rem; /* Add some padding to the offcanvas body */
+}
+
+.offcanvas-header {
+  background-color: #1c1b1b; /* Add a background color to the offcanvas header */
+  color: #fff; /* Add a text color to the offcanvas header */
+}
+
+.offcanvas-header button {
+  color: #fff; /* Add a text color to the offcanvas header button */
+}
+
+/* Add this to your media query for small devices */
+@media (max-width: 768px) {
+ .navbar-toggler {
+    background-color: transparent; /* Make the toggle button background transparent */
+  }
+ .search-bar {
+    width: 100%; /* Make the search bar full width */
+  }
+ .nav-icon {
+    margin-left: 0.5rem; /* Adjust the margin left for the nav icon */
+  }
+ .nav-icon i {
+    margin-left: 0.5rem; /* Adjust the margin left for the nav icon */
+  }
+}
+
+.search-bar {
+  position: fixed; /* Make the search bar fixed */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(100%); /* Move the search bar off the screen */
+  transition: transform 0.3s ease-in-out;
+}
+
+.offcanvas-body.show .search-bar {
+  transform: translateY(0); /* Move the search bar back into view */
+}
+
+
+/* Header.css */
+
+.navbar {
+  padding: 1rem 2rem;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.nav-icon {
+  margin-right: 1rem;
+}
+
+.nav-icon i {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.offcanvas-start {
+  transform: translateX(-100%);
+}
+
+.offcanvas-body {
+  padding: 2rem;
+}
+
+@media (max-width: 810px) {
+  .navbar {
+    padding: 1rem;
+  }
+  .navbar-toggler {
+    padding: 0.5rem;
+  }
+  .nav-icon {
+    margin-right: 0.5rem;
+  }
+  .offcanvas-start {
+    transform: translateX(0);
+  }
+}
+
+.btn-close{
+  background-color: white !important;
+  
+.search-input{
+  justify-content: flex-end;
+}
+}
+
+.navbar-nav{
+  color: white !important;
+}
+/* Custom CSS for navigation text color */
+.nav-link, .dropdown-item {
+  color: white !important;
+}
+
+.dropdown-menu {
+  background-color: #343a40; /* Dark background for better contrast */
+}
+
+.offcanvas-body{
+  background-color: #1c1b1b;
+   
+}
+/* Adjust the transition speed for off-canvas menu */
+.offcanvas-start {
+  transition: transform 5s ease-in-out; /* Change 0.5s to your desired speed */
+}
+
+.offcanvas-start.show {
+  transform: translateX(0); /* When visible */
+}
+
+.offcanvas-start:not(.show) {
+  transform: translateX(-100%); /* When hidden */
+}
+
+
+/* Ensure the navbar container has proper positioning */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between logo and icons */
+  align-items: center;
+}
+
+/* Align the nav icons to the right end */
+.nav-icon {
+  margin-left: auto; /* Pushes the icons to the right end */
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  position: absolute;
+  top: 56px; /* Adjust according to the height of the navbar */
+  right: 0;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.search-bar input {
+  padding: 5px;
+}
+
+.profile-icon {
+  color: white;
+  font-size: 1.6rem;
+  margin-top: 0.6rem;
+}
+
+.search-button {
+  position: absolute;
+  right: 5px; /* Position the button inside the input */
+  top: 30%;
+  transform: translateY(-50%);
+  padding: 8px 15px;
+  background-color: #b30000; /* Customize button color */
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  width: 8rem;
+  border-radius: 15px; /* Rounded corners */
+  cursor: pointer;
+  z-index: 3;
+}
+
+.search-button:hover {
+  background-color: #0056b3; /* Change color on hover */
+  color: black;
+}

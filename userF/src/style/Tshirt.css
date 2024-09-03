@@ -1,0 +1,115 @@
+/* Product.css */
+
+/* Basic reset for margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for the whole page */
+.product-page {
+  padding: 20px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+/* Title styling */
+.product-title {
+  color: #dc3545;
+  margin-top: 20px;
+}
+
+/* Grid container for products */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Card styling */
+
+.product-main-card {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  transition: all 0.3s ease-in-out; /* add transition effect to card */
+  border: none;
+  width: 24rem;
+  background-color: #f0f0f0;
+  margin-bottom: 2rem;
+}
+.product-images {
+background-color: white;
+}
+.product-images img {
+  height: 20rem;
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* lift card on hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* increase shadow on hover */
+}
+
+/* Body of the card */
+.product-body {
+  padding: 15px;
+  flex-grow: 1; /* Allows the body to grow and push the button to the bottom */
+}
+
+/* Product name */
+.product-name {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+/* Price and offer */
+.product-price {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Product description */
+.product-description {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 15px; /* Ensures space before the button */
+}
+
+/* Button styling */
+.add-to-subcategory-btn {
+  background-color: #343a40;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: auto; /* Pushes the button to the bottom of the card */
+}
+
+.add-to-subcategory-btn:hover {
+  background-color: #495057;
+}
+
+/* Responsive design */
+@media (min-width: 1200px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 cards on large screens */
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards on tablets */
+  }
+}
+
+@media (max-width: 767px) {
+  .product-grid {
+    grid-template-columns: 1fr; /* 1 card on mobile screens */
+  }
+}

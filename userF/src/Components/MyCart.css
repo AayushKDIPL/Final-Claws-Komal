@@ -1,0 +1,23 @@
+/* Cart.css */
+
+.card-header {
+    font-weight: bold;
+  }
+  
+  .card-body p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .input-group {
+    width: 100%;
+  }
+  
+  .btn-block {
+    width: 100%;
+  }
+  
